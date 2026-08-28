@@ -22,6 +22,8 @@ weights.
 
 - Linux x86_64;
 - exactly 4x NVIDIA RTX 3090 (96 GB aggregate VRAM);
+- 64 GB system RAM as a theoretical, not yet validated minimum;
+- 128 GB system RAM recommended for comfortable startup headroom;
 - recent NVIDIA driver with working Docker GPU passthrough;
 - Docker and NVIDIA Container Toolkit;
 - approximately 250 GB of free model storage;
@@ -38,6 +40,11 @@ cd qwen38-flash-next-4x3090
 The first run downloads roughly 237 GB of model data and can take a long
 time. Subsequent starts reuse the local files. The launcher waits for the
 OpenAI-compatible endpoint and runs one text plus one Vision smoke request.
+
+The 64 GB RAM floor is an estimate, not a completed validation result. The
+external FP8 PLE worker used approximately 49.2 GiB RSS in the reference run,
+leaving little room for the operating system and runtime processes on a
+64 GB host. Use 128 GB when possible.
 
 Default endpoint: `http://127.0.0.1:8018/v1`.
 
