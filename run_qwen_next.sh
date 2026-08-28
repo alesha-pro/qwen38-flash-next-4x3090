@@ -22,7 +22,8 @@ case "${1:-}" in
 esac
 
 needs_download=0
-[[ -f "${MODEL_DIR}/model.safetensors.index.json" ]] || needs_download=1
+python3 "${ROOT}/scripts/verify_primary.py" "${MODEL_DIR}" \
+    >/dev/null 2>&1 || needs_download=1
 if ! python3 "${ROOT}/scripts/ple_manifest.py" validate \
         "${PLE_MODEL_DIR}" "${ROOT}/manifests/ple-external-fp8-radixark.json" \
         >/dev/null 2>&1; then

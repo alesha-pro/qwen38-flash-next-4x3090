@@ -34,6 +34,12 @@ def main():
         repo_id=PLE_REPO, revision=PLE_REVISION,
         local_dir=args.ple_dir, token=token, allow_patterns=allow)
 
+    shard_count = len(set(json.loads(
+        (Path(args.model_dir) / "model.safetensors.index.json").read_text()
+    )["weight_map"].values()))
+    print(f"Download complete: {shard_count} primary shards and "
+          f"{len(manifest['files'])} external PLE files")
+
 
 if __name__ == "__main__":
     main()

@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+
 : "${MODEL_DIR:?MODEL_DIR is required}"
 : "${PLE_MODEL_DIR:?PLE_MODEL_DIR is required}"
 PORT="${PORT:-8018}"
@@ -37,5 +39,7 @@ fi
     echo "primary W4A16 checkpoint is incomplete: ${MODEL_DIR}" >&2; exit 2; }
 [[ -f "${PLE_MODEL_DIR}/model.safetensors.index.json" ]] || {
     echo "external PLE checkpoint is incomplete: ${PLE_MODEL_DIR}" >&2; exit 2; }
+
+python3 "${ROOT}/scripts/verify_primary.py" "${MODEL_DIR}"
 
 echo "DOCTOR PASS: 4x RTX 3090, Docker, checkpoints and port ${PORT}"
