@@ -35,7 +35,7 @@ if [[ "${needs_download}" == 1 ]]; then
     VENV="${ROOT}/.venv"
     if [[ ! -x "${VENV}/bin/python" ]]; then
         python3 -m venv "${VENV}"
-        "${VENV}/bin/python" -m pip install --quiet 'huggingface_hub==1.2.2'
+        "${VENV}/bin/python" -m pip install --quiet 'huggingface_hub==1.22.0'
     fi
     "${VENV}/bin/python" "${ROOT}/scripts/download_models.py" \
         --model-dir "${MODEL_DIR}" --ple-dir "${PLE_MODEL_DIR}"
