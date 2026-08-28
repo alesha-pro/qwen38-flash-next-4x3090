@@ -1,0 +1,77 @@
+{
+  "per_layer": {
+    "language_model.model.layers.11.self_attn.attn": {
+      "k_scale": 0.019252232142857144,
+      "v_scale": 0.03627232142857143,
+      "k_absmax": 8.625,
+      "v_absmax": 16.25
+    },
+    "language_model.model.layers.15.self_attn.attn": {
+      "k_scale": 0.017438616071428572,
+      "v_scale": 0.018415178571428572,
+      "k_absmax": 7.8125,
+      "v_absmax": 8.25
+    },
+    "language_model.model.layers.19.self_attn.attn": {
+      "k_scale": 0.021344866071428572,
+      "v_scale": 0.03794642857142857,
+      "k_absmax": 9.5625,
+      "v_absmax": 17.0
+    },
+    "language_model.model.layers.23.self_attn.attn": {
+      "k_scale": 0.020786830357142856,
+      "v_scale": 0.018973214285714284,
+      "k_absmax": 9.3125,
+      "v_absmax": 8.5
+    },
+    "language_model.model.layers.27.self_attn.attn": {
+      "k_scale": 0.024972098214285716,
+      "v_scale": 0.07310267857142858,
+      "k_absmax": 11.1875,
+      "v_absmax": 32.75
+    },
+    "language_model.model.layers.3.self_attn.attn": {
+      "k_scale": 0.015066964285714286,
+      "v_scale": 0.04352678571428571,
+      "k_absmax": 6.75,
+      "v_absmax": 19.5
+    },
+    "language_model.model.layers.31.self_attn.attn": {
+      "k_scale": 0.021484375,
+      "v_scale": 0.03208705357142857,
+      "k_absmax": 9.625,
+      "v_absmax": 14.375
+    },
+    "language_model.model.layers.35.self_attn.attn": {
+      "k_scale": 0.026785714285714284,
+      "v_scale": 0.06194196428571429,
+      "k_absmax": 12.0,
+      "v_absmax": 27.75
+    },
+    "language_model.model.layers.39.self_attn.attn": {
+      "k_scale": 0.025948660714285716,
+      "v_scale": 0.034458705357142856,
+      "k_absmax": 11.625,
+      "v_absmax": 15.4375
+    },
+    "language_model.model.layers.43.self_attn.attn": {
+      "k_scale": 0.0205078125,
+      "v_scale": 0.012137276785714286,
+      "k_absmax": 9.1875,
+      "v_absmax": 5.4375
+    },
+    "language_model.model.layers.47.self_attn.attn": {
+      "k_scale": 0.03501674107142857,
+      "v_scale": 0.016183035714285716,
+      "k_absmax": 15.6875,
+      "v_absmax": 7.25
+    },
+    "language_model.model.layers.7.self_attn.attn": {
+      "k_scale": 0.015066964285714286,
+      "v_scale": 0.023716517857142856,
+      "k_absmax": 6.75,
+      "v_absmax": 10.625
+    }
+  },
+  "provenance": "absmax over calibration prompts (tests/prompts.py CALIBRATION_PROMPTS), max across TP ranks (KV heads distributed), scale=absmax/448; collected 2026-08-27 on 32K text-only diagnostic config"
+}

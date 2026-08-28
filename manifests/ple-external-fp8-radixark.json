@@ -1,0 +1,1275 @@
+{
+ "schema": "qwen38.external_ple.v1",
+ "created_utc": "2026-08-27T09:47:28Z",
+ "repo_id": "RadixArk/Qwen3.8-Flash-Next-NVFP4",
+ "revision": "7b719225242aacd3dbd3f9407468c2ee9a9d2594",
+ "ple_prefix": ".ple.",
+ "files": {
+  "model-bf16-00001.safetensors": 1273114461,
+  "model-bf16-00010.safetensors": 323564201,
+  "model-plefp8-00000.safetensors": 5200027199,
+  "model-plefp8-00001.safetensors": 5200027202,
+  "model-plefp8-00002.safetensors": 5200027198,
+  "model-plefp8-00003.safetensors": 5200027189,
+  "model-plefp8-00004.safetensors": 5200027190,
+  "model-plefp8-00005.safetensors": 5200027190,
+  "model-plefp8-00006.safetensors": 5200027190,
+  "model-plefp8-00007.safetensors": 5200027190,
+  "model-plefp8-00008.safetensors": 5200027190,
+  "model-plefp8-00009.safetensors": 4400023163
+ },
+ "tensors": {
+  "model.language_model.layers.1.ple.key_proj.weight": {
+   "dtype": "BF16",
+   "shape": [
+    10240,
+    2560
+   ],
+   "file": "model-bf16-00001.safetensors"
+  },
+  "model.language_model.layers.1.ple.norm_conv.weight": {
+   "dtype": "BF16",
+   "shape": [
+    10240
+   ],
+   "file": "model-bf16-00001.safetensors"
+  },
+  "model.language_model.layers.1.ple.norm_key.weight": {
+   "dtype": "BF16",
+   "shape": [
+    10240
+   ],
+   "file": "model-bf16-00001.safetensors"
+  },
+  "model.language_model.layers.1.ple.norm_query.weight": {
+   "dtype": "BF16",
+   "shape": [
+    10240
+   ],
+   "file": "model-bf16-00001.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.layer_multipliers": {
+   "dtype": "I64",
+   "shape": [
+    3
+   ],
+   "file": "model-bf16-00001.safetensors"
+  },
+  "model.language_model.layers.1.ple.conv1d.weight": {
+   "dtype": "BF16",
+   "shape": [
+    10240,
+    1,
+    4
+   ],
+   "file": "model-bf16-00010.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_heads_offsets": {
+   "dtype": "I64",
+   "shape": [
+    16
+   ],
+   "file": "model-bf16-00010.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_heads_vocab_sizes": {
+   "dtype": "I64",
+   "shape": [
+    16
+   ],
+   "file": "model-bf16-00010.safetensors"
+  },
+  "model.language_model.layers.1.ple.value_proj.weight": {
+   "dtype": "BF16",
+   "shape": [
+    2560,
+    2560
+   ],
+   "file": "model-bf16-00010.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_0.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00000.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_1.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00000.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_10.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00000.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_100.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00000.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_101.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00000.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_102.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00000.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_103.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00000.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_104.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00000.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_105.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00000.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_106.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00000.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_107.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00000.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_108.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00000.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_109.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00000.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_11.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00001.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_110.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00001.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_111.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00001.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_112.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00001.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_113.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00001.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_114.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00001.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_115.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00001.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_116.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00001.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_117.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00001.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_118.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00001.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_119.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00001.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_12.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00001.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_120.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00001.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_121.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00002.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_122.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00002.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_123.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00002.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_124.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00002.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_125.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00002.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_126.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00002.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_127.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00002.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_13.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00002.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_14.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00002.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_15.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00002.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_16.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00002.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_17.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00002.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_18.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00002.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_19.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00003.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_2.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00003.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_20.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00003.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_21.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00003.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_22.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00003.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_23.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00003.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_24.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00003.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_25.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00003.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_26.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00003.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_27.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00003.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_28.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00003.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_29.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00003.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_3.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00003.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_30.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00004.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_31.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00004.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_32.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00004.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_33.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00004.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_34.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00004.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_35.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00004.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_36.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00004.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_37.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00004.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_38.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00004.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_39.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00004.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_4.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00004.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_40.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00004.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_41.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00004.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_42.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00005.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_43.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00005.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_44.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00005.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_45.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00005.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_46.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00005.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_47.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00005.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_48.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00005.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_49.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00005.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_5.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00005.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_50.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00005.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_51.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00005.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_52.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00005.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_53.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00005.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_54.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00006.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_55.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00006.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_56.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00006.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_57.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00006.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_58.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00006.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_59.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00006.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_6.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00006.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_60.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00006.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_61.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00006.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_62.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00006.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_63.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00006.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_64.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00006.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_65.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00006.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_66.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00007.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_67.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00007.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_68.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00007.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_69.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00007.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_7.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00007.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_70.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00007.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_71.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00007.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_72.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00007.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_73.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00007.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_74.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00007.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_75.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00007.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_76.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00007.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_77.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00007.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_78.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00008.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_79.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00008.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_8.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00008.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_80.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00008.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_81.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00008.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_82.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00008.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_83.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00008.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_84.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00008.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_85.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00008.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_86.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00008.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_87.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00008.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_88.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00008.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_89.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00008.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_9.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00009.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_90.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00009.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_91.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00009.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_92.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00009.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_93.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00009.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_94.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00009.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_95.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00009.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_96.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00009.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_97.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00009.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_98.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00009.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.shard_99.weight": {
+   "dtype": "F8_E4M3",
+   "shape": [
+    2500012,
+    160
+   ],
+   "file": "model-plefp8-00009.safetensors"
+  },
+  "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.weight_scale": {
+   "dtype": "BF16",
+   "shape": [
+    1
+   ],
+   "file": "model-plefp8-00009.safetensors"
+  }
+ },
+ "scale": {
+  "name": "model.language_model.layers.1.ple.ple_embedding.ngram_embedding.weight_scale",
+  "value": 0.00019931793212890625,
+  "sha256": "c7c58bd6007672362da2106fdbfaf9f50629e4bdf8598169c598027394ef9791",
+  "dtype": "BF16"
+ },
+ "metadata_sha256": {
+  "model.language_model.layers.1.ple.conv1d.weight": "06a84201bf8cc7082874aae671bc8688e848d51ccca9b78a0f1be791f1fb5f7e",
+  "model.language_model.layers.1.ple.key_proj.weight": "f431e2b51311b4bbea97ea0e02b6c35944033490dd5dc76bb5cc5b594f7af7de",
+  "model.language_model.layers.1.ple.norm_conv.weight": "30ffcc1dfc34a7008f54447d199d9001dd534d8e04911976b587d2773575f705",
+  "model.language_model.layers.1.ple.norm_key.weight": "516e94b36bec727c0d219282d9166ab7a6ad6684680d1f4f186b5738d2d5a6d6",
+  "model.language_model.layers.1.ple.norm_query.weight": "f5a531160c93e1345f15a02803fdefb5df59e830e7259d28f0cce8ca87fb121d",
+  "model.language_model.layers.1.ple.ple_embedding.layer_multipliers": "37349930c3c77bf4927b2afb6b50f30c404f42f00f5790bda96e7d9589c26477",
+  "model.language_model.layers.1.ple.ple_embedding.ngram_heads_offsets": "af1566f7a3be2f4a9ee8e2384aa161b8d45cfcbd92376827662a028679b7d8eb",
+  "model.language_model.layers.1.ple.ple_embedding.ngram_heads_vocab_sizes": "81879b658d9974287ceecc77463e5fdd183cb4cd66692b061ea6af24ef414d39",
+  "model.language_model.layers.1.ple.value_proj.weight": "d25aabbce09091bf133d776b41d5b3e0802c4d2523b9ca97003491c28db3c437"
+ },
+ "ngram_window_sha256": {
+  "0": "2224d3899a2bf15fcc046b47d1b0c2da54876b741adf953306551896451fc7ca",
+  "1": "72d769daf8f129fafb347ee1a9b40a7fb77061b0f95210e546c1f10ec46b76e8",
+  "10": "3b5c52f2246dd25351b6cd536850d2a9a05063913f96ee147f93ac945ca61d6e",
+  "100": "63c31874c071c7a5d8cf29064ecbf635ad577660fca2fbc726ec1e6a9a842d89",
+  "101": "26cf489cf7d012799f5f9905985b20db3b8a08faa394992f434ea59b2f47e14f",
+  "102": "dbe6f395b987ae2bc4e8a77cce133d11053e7a60a6451a1484df9e0b41a2a7e1",
+  "103": "40582ff0e1dd89ca5cf2ad6a1c78e1af00645d5acf91248ea8a4e542343a0aa9",
+  "104": "5cd4a7b5529c2bf7f9d7bcf062fcf9fe6c66e5bbf3b4a32e3524f84221d03f28",
+  "105": "aa0067547e1a662349c543656b3d9ca72c0b98d5baa353759de08df843a4bf04",
+  "106": "f33ef738adf1d06948ced16288897666abbdf29c8337b754cdf59968a961ea17",
+  "107": "992d7941bf65e32af15cb4b56c7dfd675bdb78ee9f2357c112d5abaa2261bcb8",
+  "108": "aa889e1e45d3f961fc8ae8779b1c2dba09cd2473e5b3969ecf3b964158c4aff0",
+  "109": "eed12f8000b5615add47bb4226632616fb657c3791746c29fb3de79a025a37bb",
+  "11": "0f47e03812a9391f35930f6579861aac53bdffe158e4c151e083438ce58db0a4",
+  "110": "f0bcd2c4c6816e5ad646ff4a1bbff09899c12e28c9997450c143c28def7d48ec",
+  "111": "e88a6a9d00b1d6e84c1fe6ac7936921de76e90faaaf356f837388180737c7a06",
+  "112": "78bdbaab700e66b5f630afa6dac95ed30237d5745548bf0b6ee3259b03b49358",
+  "113": "f876ccac3c0f1e1dad5de1dc4d148917415c393265b8aafb016b020c1439cf3d",
+  "114": "84185985ddca45474bbd15b5c2015216c5876ce7c65c570fcc07c484116aa255",
+  "115": "0e51b4825594a2266a51fb5e511fc6c9727c870364b3e20ef1b28aadeb826916",
+  "116": "e03d846b45960365bef86b959ca54614709a2f57a11325e3e870e50a95b413a1",
+  "117": "33a2cd9a95ebc5b257ecc68737126b3f033270c14ee2086cd99a06f0c018d92e",
+  "118": "ffaf58e51b55442f4ca78387f17cdf5ffd7ddc6bef074a172dcf9f62b27c2c82",
+  "119": "317ec68b2a95502c4ea6899fbdceaa3744a540951b58809bec12477c1f1ed568",
+  "12": "453bf76b5eacfd9470b54169009faf3a376be429502680ec8b4a35653945a93d",
+  "120": "79b5ed54c658039984b6d2c541c170fa6101a5c49187cdf94cfd5ff1ef3abb59",
+  "121": "85c7290cc030a9cb4bc3b1c779a7d9d57196e7a6223156d2498cbec367bc824b",
+  "122": "e9a5929c0685c6df36222ebe83424dfbaf92944ddc6ca6d6eb64ba63f5a70df5",
+  "123": "909178d8948a7b9e3633b713a6d90494146477c6206852ea1dc464b611d28463",
+  "124": "c19dca64f21e4e4d160ecb53c47ae921838f7ed5fd5301a27b9483a8c7a00c03",
+  "125": "612f3a1bbc7623ecf7569963540d2fa229ec2e6bc54c7d55fd1f92d1831d8999",
+  "126": "fe5a88617ab4d3f2ccf4a1196e7bd29918168156c3ad1485c945bc3a4e31f74b",
+  "127": "460fd41e0c4430edc821421aae938af10ea0a36b66754265a1091456e0d91fac",
+  "13": "7b3a0dbc107fb68c71ad58ad78d38d43f930234e68aacc100d34e6865e3df37a",
+  "14": "c44b8877fd55a74d3911aa9941a50c4427a167da8e8ed43108bf41aaaa622365",
+  "15": "9b715eca4b8a4809be2542ef18d973238fa0c556973086fc5c367feb7347211c",
+  "16": "94f3187faad39d1e9f5d3864b4a83b844701500cbe1dd94c9e27cdcec718a8ae",
+  "17": "b891e7956e17d51ee494a5ffe181ca67cc131ba99b94e402e843b3b5405c65d3",
+  "18": "a081597edffb28bfce90af48b09713256d2d26a5c5ca5e106a23c7cc29bea7a8",
+  "19": "fe921caf3a9fae03fbacb5cd8ef1b3221ce2a1c38faeb367c3442510b8d8dc38",
+  "2": "b7f81db5fb76f4f04d09880b620e42fc66aa8ad9a435c9bcf741d17488342b4b",
+  "20": "07b2b3c64f48538f6049f59fae4837dceffd6a59166c0d86ed0bc39427d1a9b4",
+  "21": "39e503eefb898b1a3a83faf06ae11179e62fd163d5f6584db7bed77d9e8440e9",
+  "22": "85da3cdd0db6c3c98b86034acc9e5439dd1c32e1982db96f498986d3bf8aa58b",
+  "23": "9c57f08dc7a4967f80fe3de125e0063099a27ff6dc453bc9779202dd5b083671",
+  "24": "44e33b809dc73cdd33716bebb339ff57dd400ce2a304ee87f5e88a1a0db71e36",
+  "25": "dd798946ae23fde98993e93b07def60d4f8c1c9b656c33c9ee22ad74e18da94b",
+  "26": "d45f7708eb764a72de975defcb0a86e75a0aa86ca9c21ec2a7ce1c84c36555e4",
+  "27": "1647df90d5aa41d1872d8db1cd6b62c7e6ba0d5c43a69e6640d3b6c42ff1323f",
+  "28": "3bbb0b399f0bd53a3879b693c142e875ce115123e8bc870fb75754b9e0661a25",
+  "29": "ff50ac51dbb63ff98ef658edeacb1435efeeffc186ca7e684f3c60333c14639d",
+  "3": "a99d06b176b10a4fa9ac271365c4bb7fba4a02ba6adf5c484a2b5f499f8eee2f",
+  "30": "8d2c80d089dbff0cb9586b7eebebc55a612e5696c0e90107ad10c6bb60a58950",
+  "31": "69b353e059ee4535e1005d724013c8d616ba5689500e82595fef13229071eb24",
+  "32": "17e00890e64097fbd314447b37739ee16341f279a35fb14016c0da664c74eeca",
+  "33": "273504ea0355d1f8a050adc406b0be8ade463761f9488383681f840ceb245e4a",
+  "34": "292865045d611830c5c33bf03387dd5b4e2d4d7411cc8f95dcc2673cba90ac02",
+  "35": "47935c21fc54fb45367310da9177329dcb70f66f4c71ad052c2b45d27e558cfd",
+  "36": "2293b7e3022c232b4eb7418c6e6e98199ea2c7f6a726206a3402505f993c8538",
+  "37": "afcd76637e9af4cf03959954364a7286ea493991c510db6837631e82263ea38a",
+  "38": "7598da127604362aa254cf4b35dfdf23ab4db6c3fd2d6b8631038c6523ae48e5",
+  "39": "5e3e5b765021e353cfe035a0985b1167d4f188b28c43c0202cc55b5e527bb246",
+  "4": "a43b24b9ede6316365c20c0c3555d6a3105e947779a59f1f924aa1175e937527",
+  "40": "8454b2a452ba18510b36d08bee1f02bf63c14f0dd067fb2eb6b8842755a17211",
+  "41": "67d331e63c6b2d1b33bdca046ea1c94e1d0e97fd0da2e0dc74219aaf40ddb2b6",
+  "42": "a29b3dfa916edbded9908f568e3c9250d1f14b1671b7f68d7718c3063c3af9e8",
+  "43": "479feacc14a2e79ca55ff56647c3067a3f720f85684dbab82503c0546debdc33",
+  "44": "26769ca64c34d241b1264d640de3a4a73a7cf0ff040f55cdbb6f676759d007db",
+  "45": "1404a85038f9a9e7c16e96f207405ac0eeb60eb06da891ec0c078677825c3dc5",
+  "46": "8ed4e0157154e7a272b84692ec681ec6b4527ca245b48540a2e4b68654ceb27e",
+  "47": "0d509fb22e47786f96dd10f0e0a1a22d6b96ae7769b0fab01e8273893e6597d7",
+  "48": "be124046436ef1ee43d081e4984e71947f6f2c34f943fb2cdc30b52dbd03a786",
+  "49": "c25de585f75f0ba7755eed8274f596f71f67495a26155ffbf5f4bacb9122a2c1",
+  "5": "959eb20d2720b1d8cf83d14a6e8abd03ba083ac58aa04d8d6cca3579ad48c5a0",
+  "50": "a0902e5932ede818964ebad6144035d3b84f783860679a18a8befcd518ade130",
+  "51": "a95c570b3144e4d1182c2643397ece27f27ae450fcff8350f99a498f9430f126",
+  "52": "c65cf9724761d8bff05c1f693dfd4c6fd139491624d3dcb214d2c30ef621a880",
+  "53": "c68ed615c72d9adf86257d7d10877d7595b15b41fcad96c7d3d1e9dcff81f2f4",
+  "54": "c56cb94d2c0f6165e84af854594c541b30fd294514d9c9b161b5eab422fe7329",
+  "55": "a8b23b97d5e142d5162b812f6a65d422fd57b372dd12207e6c5d2b3f1fdd4bbf",
+  "56": "9c2a90486af72d87a5716eb4420b98735e4cfccfc740b0058870bbe0ee7827c0",
+  "57": "2d168f7dca8fec6ad699b26de96d3b232094e4558e3e6fc5d86e8bcda408dca8",
+  "58": "b05afe8803a32f690f78b67327782198d5bc5330ba0f48db3a68897709887351",
+  "59": "aa2ad3807d5e61af25b291f7c76ee7600b99230732ea36e439c5914621819fe8",
+  "6": "d04c8536912aa32fbe0b83a5f05b560ff4e9047f874ce2b2af2f0f077002e3e5",
+  "60": "d542485f12a08a764b80806d824e7ed47760579715c547adf9faa26f6aab1a5f",
+  "61": "14677e82e1bd2a23f5c5bb73f8eb41afa813639ea355eda866be80f7e63850cc",
+  "62": "e8dd8a933c8696e7e490538f567132f7ea0e5fea1af95bb7671babfd1364e05f",
+  "63": "a97eaeebf09e3c776ba3b3fdd69fd135016e20b09fa18da617cb72d142573ba5",
+  "64": "265b6028d02539ac107e9be652c405f9b68b38dea0e5566ac7b8cd2ccb6677f7",
+  "65": "b27aaf8115546cde5a3fa07a588742d256d7ea60788518764882580a03dcb853",
+  "66": "64436431525865e1f434b14b0976a4bb1ab9da2f1ef06bdde3a3a3ced715a650",
+  "67": "718340ba5b15cd334386ac5e17ddc5d0ea5a0cb46d8e281990f6c6249d4f645a",
+  "68": "c740bc8217c96db99076d9ff9ae3974bc5e1f86a76881638bc59b46822838d50",
+  "69": "e73b6cac0282c7f1b58dd50d1bbacb653e1c2d9a48a096f96de0d6b977589036",
+  "7": "830ca31588efc5ca4894f4c3ce46b687b5b5d0fd1eb5d7f11f677f11a73aa4ce",
+  "70": "579b2b9e4d6c05ebefe78cd78e79685a4aa647670a83826c8ac60d08e0a430b7",
+  "71": "f83501f60c3d69693b925c7815c947d26ee8ada794d16757cb0799c2a99296b9",
+  "72": "0ad0d9109da0d8f076d190655586f807ab898999afab6db95166776a1284ec11",
+  "73": "a4d1efc880b2c1ede419678e6d8ee217a791e8a452c9b51f8ce0af8c549e3931",
+  "74": "f97bb9f8943982294790025037c5c4cbab3e8a2ac8f663a4e2a3075490e7f5e5",
+  "75": "de83cd4194dbcbe4bfb033690f072d354b93338035a9a77a94510121431e0d50",
+  "76": "2cde4d7abd53e8f37cd0d77c810da5fb3bd847dc0707e44f7557410b684e3807",
+  "77": "9d05b4ac68debc1094ce1a5a82bbfb70f0b8c908f82f006702f7a0ed3dbd28b2",
+  "78": "de5352ac3a29c5d51e279224b3deeb42857c80b4bb84994997b0fa4336ada857",
+  "79": "87fae7dcf4e15e8503e28978287402cbde0c5ded50b101afce8f2f8b719f0b4b",
+  "8": "71ea1d30d0b24e903748dde020aa77d6d3bf3bb8acf717265ccdac26e6a44730",
+  "80": "cd86115072306fa3f713436079d56eb240e6d59df1e78d02d2b2384fcc23125f",
+  "81": "b98c55dc9ea511f927df64e0a61cf6abc7c562dfe23de9e09420e95b6bc98135",
+  "82": "5efc500af17cd8707502851c4e7c56dfb1c66817d334a80ce58ac72b0a626e2e",
+  "83": "e1706bc52156c531d38b1f4d133e216906fe98bdaadb553a96b96c457a251e71",
+  "84": "dc0500fc3d4b15d2037e3587c4af708cd67f4abb70dafb3cc3eb1155f6ff4f93",
+  "85": "755546bf03a00de58e8a9af24b545f33ea72cded24327eaddd62e7b4ce515d2a",
+  "86": "0d6c192fc6a9de6c79aab2aa81ea4e25cbf0aa6e90ac42ce7ac70c918dacdbe0",
+  "87": "803c55d7186fac366342bec3043d642a3f46d6d3d9fc0b38d7454ef34cce740a",
+  "88": "3f5cedbb9a4a5cf12df5b05a6899a90c3fdef9e5bc8ef960a8339fb0d83ebe4e",
+  "89": "ca5229f3d1a5818e35663bad28f05eb2b17ee355af97ff285bb2e9ec0acba941",
+  "9": "8929d24e2c24b72f7f1ab9fdd1a2f217fdcddf0578b36dd6831dc08aa1035303",
+  "90": "4f5a71e8397268e303c9e748157174cd64a1e5fbecec5dcafda4294c3b44617e",
+  "91": "64cd4af4d3a4689d38f6cf7b83dba345bea8e0cd6b4a3683fc048855ffee41fe",
+  "92": "80dd5a59017e9943c1eb7956ba3dd11c6363253eedea092afd47ef7e3c801cbf",
+  "93": "99ff7c9f63989a426325018cbb5c1c1beb7602dba73ddd1a8b00c974d6451e88",
+  "94": "682ece6da33b3fbab5afbd0daeb231e15b09b2b1653358bfaf88bd5cd8bfdfae",
+  "95": "673625358e41872be3428fa89ac67e234136d4c1b7e8228c4e6e84c396f98f7f",
+  "96": "8e7ee8074d5dc60f18d0fb8bc912f9022b0dfcb8b637d23634cefa2e498aba5a",
+  "97": "468b26a6fb8e257b7f5bc063b509b47af98df9099a1c4e2d964e6b631d5184d3",
+  "98": "7d4cafba0facb55e4eccca07794322487a5e082c26d6c8866986322e28348313",
+  "99": "cb1c61390341930709f2b4258577740000ee9594feb682b450563f99a3dfcc23"
+ },
+ "ngram_window_method": "sha256(first|middle|last 16 MiB of payload)",
+ "reference": {
+  "bf16_repo": "Qwen/Qwen3.8-Flash-Next",
+  "bf16_revision": "f5d08274bafd880402bd16f5e3e6c514136ec06c",
+  "phase0_lineage": "evidence/phase0/lineage-report.md",
+  "note": "PLE FP8 E4M3, single global scale; lineage and sampled numeric equivalence proven in Phase 0"
+ }
+}

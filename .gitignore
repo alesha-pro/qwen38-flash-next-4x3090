@@ -1,0 +1,8 @@
+runs/*
+!runs/.gitkeep
+__pycache__/
+*.pyc
+*.log
+.venv/
+.env
+.runtime/

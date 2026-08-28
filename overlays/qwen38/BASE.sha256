@@ -1,0 +1,4 @@
+# Expected SHA256 of the vendor-installed files that the FP8 QSA overlays
+# replace, inside image sha256:fc120ece0a388cc0aa1caad4a9f1cd92113484ab7ec2fd0efadd62585be05bf8
+748addc85efaa8f7df940d1245bc900192f92e1f17af8fa774625758600751cb  /usr/local/lib/python3.12/dist-packages/vllm/models/qwen3_8_flash_next/nvidia/qsa.py
+c4ffe3674cafa0ce2dabc39a39f0ddbb4b594bc358ad210ffce9d04383350c7f  /usr/local/lib/python3.12/dist-packages/vllm/models/qwen3_8_flash_next/nvidia/ops/qsa.py
