@@ -1,0 +1,4 @@
+server: bash runs/20260828-bench/launch-bench-a.sh 8 (KV_CACHE_DTYPE=fp8_e4m3 MAX_MODEL_LEN=262144 MAX_NUM_SEQS=8)
+BENCH: python3 tests/bench.py single 4096 1 64  # warmup
+BENCH: for d in 4096 32768: for c in 1 2 4 8: python3 tests/bench.py concur $d $c 3 64
+BENCH: python3 tests/bench.py concur 131072 2 3 64

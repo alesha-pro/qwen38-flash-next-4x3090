@@ -1,0 +1,3 @@
+server: bash runs/20260828-bench/launch-bench-a.sh 1 (as in argv-server-a.txt)
+BENCH: for d in 1000 4096 16384 32768 65536 131072 196608 263800: python3 tests/bench.py single $d 3 16
+BENCH: for d in 1000 16384 65536 196608: python3 tests/bench.py single $d 1 256

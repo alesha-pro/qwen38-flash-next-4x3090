@@ -1,0 +1,11 @@
+# Common effective environment for all benchmark servers (2026-08-28)
+image=vllm/vllm-openai:qwen38-flash-next (sha256:fc120ece0a388cc0aa1caad4a9f1cd92113484ab7ec2fd0efadd62585be05bf8)
+model=/mnt/ssd/models/Qwen3.8-Flash-Next-W4A16 (W4A16 checkpoint, ro mount)
+ple_model=/mnt/ssd/models/Qwen3.8-Flash-Next-NVFP4 (external FP8 PLE, manifest-validated)
+vllm=v0.1.dev20073+g8e685d198
+launcher=scripts/launch-integrated.sh (repo commit 19a26de lineage)
+TP=4 EP=4 vision=on eager=off mtp=off
+compilation={"mode":"VLLM_COMPILE","cudagraph_mode":"FULL_AND_PIECEWISE"}
+power_limit=220 W/GPU (verified unchanged at every teardown)
+host=4x RTX 3090 (sm_86), 125 GB RAM, no swap during runs
+telemetry cadence=5 s (nvidia-smi)

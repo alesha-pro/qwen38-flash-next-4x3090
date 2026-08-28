@@ -1,0 +1,3 @@
+server: bash runs/20260828-bench/launch-bench-a.sh 1  (KV_CACHE_DTYPE=fp8_e4m3 MAX_MODEL_LEN=262144 MAX_NUM_SEQS=1 COMPILATION_CONFIG={"mode":"VLLM_COMPILE","cudagraph_mode":"FULL_AND_PIECEWISE"} CONTAINER_NAME=qwen38-w4a16-fp8kv-bench-a1)
+BENCH: python3 tests/bench.py single 263800 1 256   # warmup
+BENCH: python3 tests/bench.py single 263800 3 256   # measured
