@@ -2,11 +2,13 @@
 
 | Component | Owner | Integration rule |
 |---|---|---|
-| PLE layer and scale fix | W4A16 repo | Always mounted; never replace with KV copy |
-| PLE worker and external source | W4A16 repo | Always mounted with manifest |
-| gpu_worker warmup fix | W4A16 repo | Always mounted |
-| multiproc executor PLE ordering | W4A16 repo | Always mounted |
-| GDN/shared-expert compatibility | W4A16 repo | Always mounted |
+| PLE layer and scale fix | integration base | Always mounted; never replace with KV copy |
+| PLE worker and external source | integration base | Always mounted with manifest |
+| gpu_worker warmup fix | integration base | Always mounted |
+| multiproc executor PLE ordering | integration base | Always mounted |
+| GDN/shared-expert compatibility | integration base | Always mounted |
+| Split GDN/hyper model overlays | cyankiwi AWQ | Always mounted for thin-v2-fix |
+| shared-expert gate repair | cyankiwi AWQ | Build-time restore to BF16; mandatory |
 | QSA dtype/scale plumbing | KV repo | Mount only for `KV_CACHE_DTYPE=fp8*` |
 | QSA FP8 decode kernel | KV repo | Mount only for `KV_CACHE_DTYPE=fp8*` |
 | QSA base hashes | KV repo | Verify against pinned image before GPU launch |
@@ -14,4 +16,3 @@
 
 The combined launcher is locally owned by this integration repository. BF16
 KV must not mount the QSA FP8 overlays, preserving a rollback control.
-

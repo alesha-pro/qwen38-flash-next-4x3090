@@ -5,7 +5,7 @@ ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 [[ -f "${ROOT}/.env" ]] && set -a && source "${ROOT}/.env" && set +a
 
 MODELS_ROOT="${QWEN38_MODELS_ROOT:-${HOME}/.cache/qwen38-flash-next-4x3090/models}"
-export MODEL_DIR="${MODEL_DIR:-${MODELS_ROOT}/Qwen3.8-Flash-Next-W4A16}"
+export MODEL_DIR="${MODEL_DIR:-${MODELS_ROOT}/Qwen3.8-Flash-Next-AWQ-INT4-cyankiwi-thin-v2-fix}"
 export PLE_MODEL_DIR="${PLE_MODEL_DIR:-${MODELS_ROOT}/Qwen3.8-Flash-Next-NVFP4}"
 export HF_CACHE_DIR="${HF_CACHE_DIR:-${MODELS_ROOT}/.hf-cache}"
 export PORT="${PORT:-8018}"

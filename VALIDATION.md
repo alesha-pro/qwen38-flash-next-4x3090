@@ -22,7 +22,7 @@ run passes.
   scales;
 - no fallback to scale 1.0;
 - no NaN/Inf;
-- deterministic BF16/FP8 A/B uses the same W4A16 model and prompts;
+- deterministic BF16/FP8 A/B uses the same primary checkpoint and prompts;
 - record exact-match separately from semantic equivalence;
 - if feasible, preserve top-logprob divergence or an explicitly approximate
   KLD measure. Do not label top-N KLD as full-vocabulary KLD.
@@ -35,4 +35,3 @@ length, tokenizer-counted actual input and served output independently.
 
 No eager mode, no language-model-only mode and no graph disablement are valid
 capacity workarounds.
-

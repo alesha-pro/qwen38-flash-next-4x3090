@@ -1,9 +1,9 @@
 # Source map
 
-## W4A16 integration base
+## Cyankiwi AWQ thin-v2-fix integration
 
-Source project: `qwen38-quantize`  
-Commit: `1f41c76d068de51c4612f8e86c0f1fcc9ce79352`
+Source project: `qwen38-flash-next-cyankiwi-awq`
+Commit: `ffa84f0`
 
 Owned imports:
 
@@ -12,7 +12,10 @@ Owned imports:
 - external PLE overlays: `ple_layer.py`, `ple_offload/worker.py`,
   `ple_offload/ple_external_source.py`;
 - external PLE validator and manifest;
-- frozen W4A16 text/Vision request helpers and Phase 2 evidence.
+- AWQ thin-checkpoint builder, FP8 companion-projection builder and the
+  mandatory BF16 shared-expert-gate repair;
+- split-projection model and hyperconnection overlays required by that
+  derived checkpoint.
 
 `ple_layer.py` includes the proven external-scale repair. GPU ranks must load
 the BF16 scalar `0.00019931793212890625` from the external checkpoint with
@@ -36,6 +39,6 @@ Owned imports:
 - Image digest:
   `sha256:fc120ece0a388cc0aa1caad4a9f1cd92113484ab7ec2fd0efadd62585be05bf8`;
 - vendor vLLM: `0.1.dev20073+g8e685d198`;
-- W4A16 revision: `9236d703b25f25eb5c17e9640204f84fa1ce0c6e`;
+- cyankiwi AWQ revision: `01324cfa2c3f46948781fad30641ac360014e008`;
 - external NVFP4/PLE revision:
   `7b719225242aacd3dbd3f9407468c2ee9a9d2594`.

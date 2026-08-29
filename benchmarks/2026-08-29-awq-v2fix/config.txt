@@ -1,0 +1,7 @@
+endpoint=http://127.0.0.1:8018
+model=/model
+max_model_len=262144
+max_num_seqs=1
+kv_cache_dtype=fp8_e4m3
+thinking=disabled
+prefix_cache=defeated-by-unique-nonce

@@ -30,7 +30,9 @@ python3 -m py_compile \
     "${ROOT}/overlays/ple_offload/worker.py" \
     "${ROOT}/overlays/ple_offload/ple_external_source.py" \
     "${ROOT}/overlays/qwen38/qsa.py" \
-    "${ROOT}/overlays/qwen38/ops_qsa.py"
+    "${ROOT}/overlays/qwen38/ops_qsa.py" \
+    "${ROOT}/overlays/qwen38_flash_next_model.py" \
+    "${ROOT}/overlays/hyperconnection.py"
 bash -n "${ROOT}/scripts/launch-integrated.sh"
 bash -n "${ROOT}/run_qwen_next.sh"
 bash -n "${ROOT}/stop_qwen_next.sh"
