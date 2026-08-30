@@ -1,9 +1,9 @@
 # Source map
 
-## Cyankiwi AWQ thin-v2-fix integration
+## Cyankiwi AWQ 4x3090 v1 integration
 
 Source project: `qwen38-flash-next-cyankiwi-awq`
-Commit: `ffa84f0`
+Commit: `7aaa2b8e1eae853c36605bb366c1a581869bdbd5`
 
 Owned imports:
 
@@ -12,8 +12,9 @@ Owned imports:
 - external PLE overlays: `ple_layer.py`, `ple_offload/worker.py`,
   `ple_offload/ple_external_source.py`;
 - external PLE validator and manifest;
-- AWQ thin-checkpoint builder, FP8 companion-projection builder and the
-  mandatory BF16 shared-expert-gate repair;
+- AWQ thin-checkpoint builder, FP8 companion-projection builder, mandatory
+  BF16 shared-expert-gate repair and BF16 GDN `in_proj_a` / `in_proj_b`
+  restoration;
 - split-projection model and hyperconnection overlays required by that
   derived checkpoint.
 

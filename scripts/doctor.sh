@@ -36,7 +36,7 @@ if command -v ss >/dev/null 2>&1 && ss -H -ltn "sport = :${PORT}" | grep -q .; t
 fi
 
 [[ -f "${MODEL_DIR}/model.safetensors.index.json" ]] || {
-    echo "primary cyankiwi AWQ thin-v2-fix checkpoint is incomplete: ${MODEL_DIR}" >&2; exit 2; }
+    echo "primary Qwen3.8 AWQ 4x3090 v1 checkpoint is incomplete: ${MODEL_DIR}" >&2; exit 2; }
 [[ -f "${PLE_MODEL_DIR}/model.safetensors.index.json" ]] || {
     echo "external PLE checkpoint is incomplete: ${PLE_MODEL_DIR}" >&2; exit 2; }
 

@@ -23,7 +23,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("v1", type=Path, help="BF16 thin checkpoint")
     parser.add_argument("v2", type=Path, help="FP8 thin-v2 checkpoint")
-    parser.add_argument("out", type=Path, help="destination thin-v2-fix checkpoint")
+    parser.add_argument("out", type=Path, help="destination shared-expert repair stage")
     args = parser.parse_args()
     v1, v2, out = args.v1.resolve(), args.v2.resolve(), args.out.resolve()
 

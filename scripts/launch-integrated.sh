@@ -4,14 +4,14 @@ set -euo pipefail
 ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
 IMAGE="${VLLM_IMAGE:-vllm/vllm-openai:qwen38-flash-next}"
 PINNED_IMAGE_ID="${PINNED_IMAGE_ID:-sha256:fc120ece0a388cc0aa1caad4a9f1cd92113484ab7ec2fd0efadd62585be05bf8}"
-MODEL_DIR="${MODEL_DIR:-/mnt/ssd/models/Qwen3.8-Flash-Next-AWQ-INT4-cyankiwi-thin-v2-fix}"
+MODEL_DIR="${MODEL_DIR:-/mnt/ssd/models/Qwen3.8-Flash-Next-AWQ-INT4-4x3090-v1}"
 PLE_MODEL_DIR="${PLE_MODEL_DIR:-/mnt/ssd/models/Qwen3.8-Flash-Next-NVFP4}"
 PLE_MANIFEST="${PLE_MANIFEST:-${ROOT}/manifests/ple-external-fp8-radixark.json}"
 HF_CACHE_DIR="${HF_CACHE_DIR:-/mnt/ssd/hf_cache}"
 COMPILE_CACHE_DIR="${COMPILE_CACHE_DIR:-/mnt/ssd/vllm_compile_cache}"
 PORT="${PORT:-8018}"
 HOST="${HOST:-127.0.0.1}"
-CONTAINER_NAME="${CONTAINER_NAME:-qwen38-awq-v2fix-262k}"
+CONTAINER_NAME="${CONTAINER_NAME:-qwen38-awq-v1-262k}"
 MAX_MODEL_LEN="${MAX_MODEL_LEN:-262144}"
 MAX_NUM_SEQS="${MAX_NUM_SEQS:-1}"
 MAX_NUM_BATCHED_TOKENS="${MAX_NUM_BATCHED_TOKENS:-1024}"
@@ -27,7 +27,7 @@ DIST=/usr/local/lib/python3.12/dist-packages
 VLLM_PKG="${DIST}/vllm"
 
 [[ -f "${MODEL_DIR}/model.safetensors.index.json" ]] || {
-    echo "derived cyankiwi AWQ thin-v2-fix checkpoint missing" >&2; exit 2; }
+    echo "derived Qwen3.8 AWQ 4x3090 v1 checkpoint missing" >&2; exit 2; }
 [[ -f "${PLE_MODEL_DIR}/model.safetensors.index.json" ]] || {
     echo "external PLE checkpoint missing" >&2; exit 2; }
 [[ -f "${PLE_MANIFEST}" ]] || { echo "PLE manifest missing" >&2; exit 2; }

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Download and derive the exact cyankiwi AWQ thin-v2-fix runtime checkpoint."""
+"""Download and derive the public Qwen3.8 AWQ 4x3090 v1 checkpoint."""
 
 from __future__ import annotations
 
@@ -82,7 +82,10 @@ def main() -> None:
         staging = model_dir.parent / ".qwen38-awq-staging"
         if staging.exists():
             shutil.rmtree(staging)
-        source, v1, v2 = staging / "source", staging / "thin-v1", staging / "thin-v2"
+        source = staging / "source"
+        thin_v1 = staging / "thin-v1"
+        thin_v2 = staging / "thin-v2"
+        thin_v2_gate = staging / "thin-v2-gate"
         print(f"Downloading {MODEL_REPO}@{MODEL_REVISION} selected shards to {source}")
         snapshot_download(
             repo_id=MODEL_REPO, revision=MODEL_REVISION, local_dir=source,
@@ -90,13 +93,13 @@ def main() -> None:
         )
         subprocess.run(
             ["python3", str(root / "scripts" / "build-thin-checkpoint.py"),
-             str(source), str(v1)],
+             str(source), str(thin_v1)],
             check=True,
         )
         # The filtered index refers to the two retained source shards. Hardlink
         # them into thin-v1 so this build does not create a second 80 GiB copy.
         for shard in UPSTREAM_SHARDS:
-            os.link(source / shard, v1 / shard)
+            os.link(source / shard, thin_v1 / shard)
         image = os.environ.get("VLLM_IMAGE", "vllm/vllm-openai:qwen38-flash-next")
         docker_build(
             root, staging, model_dir.parent, image, "build-fp8-thin-v2.py",
@@ -104,9 +107,14 @@ def main() -> None:
         )
         docker_build(
             root, staging, model_dir.parent, image, "fix-shared-expert-gate.py",
-            "/staging/thin-v1", "/staging/thin-v2", f"/models/{model_dir.name}",
+            "/staging/thin-v1", "/staging/thin-v2", "/staging/thin-v2-gate",
         )
-        (model_dir / "AWQ-V2FIX-MANIFEST.json").write_text(json.dumps({
+        docker_build(
+            root, staging, model_dir.parent, image, "restore-gdn-in-projections.py",
+            "/staging/thin-v1", "/staging/thin-v2-gate",
+            f"/models/{model_dir.name}",
+        )
+        (model_dir / "AWQ-4X3090-V1-MANIFEST.json").write_text(json.dumps({
             "upstream_repo": MODEL_REPO,
             "upstream_revision": MODEL_REVISION,
             "kept_upstream_shards": list(UPSTREAM_SHARDS),
@@ -114,14 +122,22 @@ def main() -> None:
                 "model-00001-of-00004.safetensors": "PLE-only; external FP8 PLE",
                 "model-00004-of-00004.safetensors": "MTP-only; not used",
             },
-            "derived_recipe": "thin-v1 -> FP8 companions -> BF16 shared_expert_gate fix",
+            "derived_recipe": (
+                "thin-v1 -> FP8 companions -> BF16 shared_expert_gate -> "
+                "BF16 GDN in_proj_a/in_proj_b"
+            ),
+            "format": "Qwen3.8-Flash-Next-AWQ-INT4-4x3090-v1",
+            "bf16_restores": {
+                "shared_expert_gate": 48,
+                "gdn_in_proj_a_b": 72,
+            },
         }, indent=2, sort_keys=True) + "\n")
         if not populated_checkpoint(model_dir):
             raise SystemExit(f"derived checkpoint validation failed: {model_dir}")
         shutil.rmtree(staging)
-        print(f"Derived AWQ thin-v2-fix checkpoint: {model_dir}")
+        print(f"Derived Qwen3.8 AWQ 4x3090 v1 checkpoint: {model_dir}")
     else:
-        print(f"Reusing derived AWQ thin-v2-fix checkpoint: {model_dir}")
+        print(f"Reusing derived Qwen3.8 AWQ 4x3090 v1 checkpoint: {model_dir}")
 
     allow = ["model.safetensors.index.json", *sorted(manifest["files"])]
     print(f"Downloading selected FP8 PLE files from {PLE_REPO}@{PLE_REVISION}")
